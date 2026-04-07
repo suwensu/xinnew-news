@@ -41,7 +41,7 @@ app:
 # ===============================================================
 schedule:
   enabled: true                         # 是否启用调度系统
-  preset: "morning_evening"             # 预设模板名称（见上方说明）
+  preset: "always_on"             # 预设模板名称（见上方说明）
 
 
 # ===============================================================
@@ -69,14 +69,18 @@ platforms:
       name: "财联社热门"
     - id: "ifeng"
       name: "凤凰网"
-    - id: "tieba"
-      name: "贴吧"
     - id: "weibo"
       name: "微博"
     - id: "douyin"
       name: "抖音"
-    - id: "zhihu"
-      name: "知乎"
+    - id: "cankaoxiaoxi"
+      name: "参考消息"
+    - id: "tencent-hot"
+      name: "腾讯新闻 综合早报"
+    - id: "cls-telegraph"
+      name: "财联社 电报"
+    - id: "baidu"
+      name: "百度热搜"
 
 
 
@@ -527,7 +531,7 @@ ai_analysis:
 # 模型配置见上方 ai 配置段
 # ===============================================================
 ai_translation:
-  enabled: true                    # 是否启用翻译功能
+  enabled: false                   # 是否启用翻译功能
 
   # 翻译目标语言
   # 格式：自然语言描述
